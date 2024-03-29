@@ -24,7 +24,10 @@
     "url": "https://github.com/commercelayer/mfe-identity.git"
   },
   "license": "MIT",
-
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=8"
+  },
   "workspaces": [
     "packages/*"
   ],
