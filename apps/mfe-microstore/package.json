@@ -24,10 +24,6 @@
     "url": "https://github.com/commercelayer/monorepo-starter.git"
   },
   "license": "MIT",
-  "engines": {
-    "node": ">=18",
-    "pnpm": ">=7"
-  },
   "workspaces": [
     "packages/*"
   ],
