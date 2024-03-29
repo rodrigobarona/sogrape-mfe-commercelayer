@@ -1,6 +1,6 @@
 window.clAppConfig = Object.assign(
   {
-    domain: "vercel.app",
+    domain: "commercelayer.io",
     selfHostedSlug: null,
   },
   window.clAppConfig
