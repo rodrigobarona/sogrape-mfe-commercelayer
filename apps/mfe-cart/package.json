@@ -1,0 +1,44 @@
+{
+  "private": true,
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "dev": "pnpm -r dev",
+    "build": "pnpm -r build",
+    "preview": "pnpm -r preview",
+    "lint": "pnpm -r lint",
+    "lint:fix": "pnpm -r lint:fix",
+    "test": "pnpm -r test",
+    "test:watch": "pnpm -r test:watch",
+    "test:e2e": "pnpm -r test:e2e",
+    "dep:upgrade:major": "pnpm -r exec npm-check-updates -u",
+    "dep:upgrade:minor": "pnpm dep:upgrade:major -t minor",
+    "dep:self-upgrade:major": "pnpm exec npm-check-updates -u",
+    "dep:self-upgrade:minor": "pnpm dep:self-upgrade:major -t minor"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Giuseppe Ciotola",
+    "email": "giuseppe@commercelayer.io"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/commercelayer/monorepo-starter.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=7"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "husky": "^9.0.11",
+    "lerna": "^8.1.2",
+    "lint-staged": "^15.2.2",
+    "npm-check-updates": "^16.14.15"
+  },
+  "resolutions": {
+    "ip": "^2.0.1"
+  }
+}

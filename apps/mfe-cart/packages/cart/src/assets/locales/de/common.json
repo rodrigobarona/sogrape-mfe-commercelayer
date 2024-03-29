@@ -1,0 +1,51 @@
+{
+  "general": {
+    "title": "Dein Warenkorb",
+    "item": "Artikel",
+    "item_other": "Artikel",
+    "emptyCart": "Dein Warenkorb ist leer",
+    "remove": "Entfernen",
+    "price": "Preis",
+    "finalPriceInCheckoutText": "Inklusive Mehrwertsteuer. Versandkosten werden im Checkout berechnet.",
+    "subtotal": "Zwischensumme",
+    "discount": "Rabatt",
+    "giftCard": "Geschenkgutschein",
+    "total": "Gesamtsumme",
+    "gotToCheckoutCta": "Zur Kasse",
+    "returnUrlLabel": "Weiter einkaufen",
+    "quantityNotAvailable": "Die ausgewählte Menge ist nicht verfügbar",
+    "retryableErrorCode": "Verbindungsprobleme",
+    "retryableErrorDescription": "Bitte lade die Seite einmal neu"
+  },
+  "item": {
+    "frequency": {
+      "hourly": "Hourly",
+      "daily": "Daily",
+      "weekly": "Weekly",
+      "monthly": "Monthly",
+      "two-months": "Every two months",
+      "two-month": "Every two months",
+      "three-months": "Every three months",
+      "three-month": "Every three months",
+      "four-months": "Every four months",
+      "four-month": "Every four months",
+      "six-months": "Every six months",
+      "six-month": "Every six months",
+      "yearly": "Yearly"
+    }
+  },
+  "couponOrGift": {
+    "label": "Rabattcode vorhanden?",
+    "submit": "Anwenden",
+    "placeholder": {
+      "gift_card_or_coupon_code": "Geschenkkarte oder Rabattcode",
+      "gift_card_code": "Geschenkkarte",
+      "coupon_code": "Rabattcode"
+    },
+    "error": {
+      "gift_card_or_coupon_code": "Bitte einen gültigen Geschenkkarten- oder Rabattcode eingeben",
+      "gift_card_code": "Bitte eine gültige Geschenkkarte eingeben",
+      "coupon_code": "Bitte eine gültigen Rabattcode eingeben"
+    }
+  }
+}

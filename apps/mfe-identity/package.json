@@ -1,0 +1,42 @@
+{
+  "private": true,
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "dev": "pnpm -r dev",
+    "build": "pnpm -r build",
+    "preview": "pnpm -r preview",
+    "lint": "pnpm -r lint",
+    "lint:fix": "pnpm -r lint:fix",
+    "test": "pnpm -r test",
+    "test:watch": "pnpm -r test:watch",
+    "dep:upgrade:major": "pnpm -r exec npm-check-updates -u",
+    "dep:upgrade:minor": "pnpm dep:upgrade:major -t minor",
+    "dep:self-upgrade:major": "pnpm exec npm-check-updates -u",
+    "dep:self-upgrade:minor": "pnpm dep:self-upgrade:major -t minor"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Pier Francesco Ferrari",
+    "email": "pierfrancesco@commercelayer.io"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/commercelayer/mfe-identity.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=8"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^6.1.0",
+    "npm-check-updates": "^16.14.6"
+  },
+  "packageManager": "pnpm@8.0.0",
+  "resolutions": {
+    "@babel/traverse": "^7.23.2"
+  }
+}

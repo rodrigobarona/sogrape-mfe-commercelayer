@@ -1,0 +1,8 @@
+.inputSpinner > input[type='number']::-webkit-outer-spin-button,
+.inputSpinner > input[type='number']::-webkit-inner-spin-button,
+.inputSpinner > input[type='number'] {
+  -webkit-appearance: none;
+  margin: 0;
+  -moz-appearance: textfield !important;
+  border-radius: 0; /* prevent safari to display native status when appearance is none */
+}

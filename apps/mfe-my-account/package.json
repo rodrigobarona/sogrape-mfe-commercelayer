@@ -1,0 +1,57 @@
+{
+  "name": "mfe-my-account",
+  "private": true,
+  "engines": {
+    "node": ">=16",
+    "pnpm": ">=7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/commercelayer/mfe-my-account.git"
+  },
+  "author": {
+    "name": "Pier Francesco Ferrari",
+    "email": "pierfrancesco@commercelayer.io"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/commercelayer/mfe-my-account/issues"
+  },
+  "homepage": "https://github.com/commercelayer/mfe-my-account#readme",
+  "keywords": [
+    "reactjs",
+    "vitejs",
+    "jamstack",
+    "headless",
+    "ecommerce",
+    "api",
+    "commercelayer"
+  ],
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "dev": "pnpm --filter '*' dev",
+    "build": "pnpm --filter '*' build",
+    "start": "pnpm --filter '*' start",
+    "lint": "pnpm -r lint",
+    "lint:fix": "pnpm -r lint:fix",
+    "test": "pnpm --filter '*' test",
+    "test:e2e": "pnpm --filter '*' test:e2e",
+    "dep:upgrade:major": "pnpm -r exec npm-check-updates -u",
+    "dep:upgrade:minor": "pnpm dep:upgrade:major -t minor",
+    "dep:self-upgrade:major": "pnpm exec npm-check-updates -u",
+    "dep:self-upgrade:minor": "pnpm dep:self-upgrade:major -t minor"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^8.1.2",
+    "npm-check-updates": "^16.14.14"
+  },
+  "resolutions": {
+    "@types/react": ">=18.0.0",
+    "@types/react-dom": ">=18.0.0",
+    "@babel/traverse": "^7.23.2",
+    "socks": "^2.7.3"
+  }
+}
